@@ -1,4 +1,4 @@
-Text Preprocessing Pipeline Application
+<h2> Text Preprocessing Pipeline Application </h2>
 
 A web application for text preprocessing using Django REST framework and React.
 
