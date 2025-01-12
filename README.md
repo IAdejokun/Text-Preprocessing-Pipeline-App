@@ -20,7 +20,7 @@ Requirements
 - typing_extensions: 4.12.2
 - tzdata: 2024.2
 
-icense
+License
 
 This project is licensed under the MIT License. See LICENSE.txt for more information.
 
