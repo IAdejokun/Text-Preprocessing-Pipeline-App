@@ -1,16 +1,16 @@
 
 import { lazy, Suspense } from 'react'
-import { BrowserRouter, Outlet, Route, Routes } from "react-router"
+import { BrowserRouter, Route, Routes } from "react-router"
 import SkeletonLoader from '../components/skeleton-loader';
 
 
-const HomeComponent = lazy(() => import("../pages/home"));
+const HomeComponent = lazy(() => import("../pages/home/home"));
 const ResultsComponent = lazy(() => import("../pages/results"));
 const PageNotFoundComponent = lazy(() => import("../pages/page-not-found"));
 const SignupComponent = lazy(() => import("../auth/signup-view"));
 const SigninComponent = lazy(() => import("../auth/signin-view"));
 
-const rootpath = "/";
+// const rootpath = "/";
 const homepath = "/home";
 const resultspath = "/results";
 const pagenotfoundpath = "*";
@@ -23,12 +23,12 @@ const AllRoutesComponent = () => {
     <Suspense fallback={<SkeletonLoader />}>
       <BrowserRouter>
         <Routes>
-          <Route path={rootpath} element={<Outlet />} />
+          {/* <Route path={rootpath} element={<Outlet />} /> */}
           <Route index path={homepath} element={<HomeComponent/>} />
           <Route path={resultspath} element={<ResultsComponent/>} />
-          <Route path={pagenotfoundpath} element={<PageNotFoundComponent/>} />
           <Route path={signuppath} element={<SignupComponent/>} />
           <Route path={signinpath} element={<SigninComponent/>} />
+          <Route path={pagenotfoundpath} element={<PageNotFoundComponent/>} />
         </Routes>
       </BrowserRouter>
     </Suspense>

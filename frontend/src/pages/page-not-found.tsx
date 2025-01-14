@@ -2,7 +2,7 @@
 
 const PageNotFoundComponent = () => {
   return (
-    <div>HomeComponent</div>
+    <div>Page not found Component</div>
   )
 }
 

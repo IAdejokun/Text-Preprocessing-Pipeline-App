@@ -2,7 +2,7 @@
 
 const ResultsComponent = () => {
   return (
-    <div>HomeComponent</div>
+    <div>ResultsComponent</div>
   )
 }
 
