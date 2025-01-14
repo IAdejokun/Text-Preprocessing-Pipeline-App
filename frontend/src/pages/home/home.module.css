@@ -1,0 +1,19 @@
+body{
+    background-color: #242424;
+    color: white;
+    
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family:"Open Sans", serif;
+}
+
+h2{
+    font-weight: 800;
+    font-size: 3rem;
+    text-align: center;
+}
+
+p{
+    font-weight: 400;
+}
